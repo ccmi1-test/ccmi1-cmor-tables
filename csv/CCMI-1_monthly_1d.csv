@@ -1,0 +1,4 @@
+"Monthly-mean 1-d atmosphere or land surface data on a certain pressure level (latitude, time:month)",,,,,,,,,
+,,,,,,,,,
+CF standard name,Long_name,Output variable name,Units,Scalar dims,Cell Method,Positive Flux Dir.,Min Value,Max Value,Notes
+northward_heat_flux_in_air_due_to_eddy_advection,Meridional Heat Flux,vt100,K m s-1,pr100,time: mean longitude: mean,NA,-1000.0,1000.0,Zonally averaged meridional heat flux at 100 hPa as monthly means derived from daily (or higher frequency) fields.

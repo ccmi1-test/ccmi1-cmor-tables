@@ -1,0 +1,4 @@
+"Annual-mean 2-d (longitude, latitude, time:year)",,,,,,,,,
+,,,,,,,,,
+CF standard name,Long_name,Output variable name,Units,Scalar Dims,Cell Method,Positive Flux Dir.,Min Value,Max Value,Notes
+CF25_FAIL length_of_growing_season,Growing Season,growseas,days,NA,time: sum,NA,0.0,400.0,

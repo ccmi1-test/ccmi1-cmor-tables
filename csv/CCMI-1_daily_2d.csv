@@ -1,0 +1,62 @@
+"Daily 2-d atmosphere data (longitude, latitude, time:day) instantaneous preferred over daily-mean (daily-mean = mean over 24 hours)",,,,,,,,,
+,,,,,,,,,
+CF standard name,Long_name,Output variable name,Units,Scalar dims,Cell Method,Positive Flux Dir.,Min Value,Max Value,Notes
+surface_air_pressure,Surface Air Pressure,ps,Pa,NA,time: point,NA,0.0,1000000.0,"surface pressure (not mean sea-level pressure), 2-D field to calculate the 3-D pressure field from hybrid coordinates"
+eastward_wind,Eastward Wind at 10 hPa,ua10,m s-1,pr10,time: point,NA,-1000.0,1000.0,Zonal wind on the 10 hPa surface
+eastward_wind,Eastward Wind at 100 hPa,ua100,m s-1,pr100,time: point,NA,-1000.0,1000.0,Zonal wind on the 100 hPa surface
+eastward_wind,Eastward Wind at 500 hPa,ua500,m s-1,pr500,time: point,NA,-1000.0,1000.0,Zonal wind on the 500 hPa surface
+eastward_wind,Eastward Wind at 850 hPa,ua850,m s-1,pr850,time: point,NA,-1000.0,1000.0,Zonal wind on the 850 hPa surface
+eastward_wind,Eastward Wind at 1000 hPa,ua1000,m s-1,pr1000,time: point,NA,-1000.0,1000.0,Zonal wind on the 1000 hPa surface
+northward_wind,Northward Wind at 10 hPa,va10,m s-1,pr10,time: point,NA,-1000.0,1000.0,Meridional wind on the 10 hPa surface
+northward_wind,Northward Wind at 50 hPa,va50,m s-1,pr50,time: point,NA,-1000.0,1000.0,Meridional wind on the 50 hPa surface
+northward_wind,Northward Wind at 100 hPa,va100,m s-1,pr100,time: point,NA,-1000.0,1000.0,Meridional wind on the 100 hPa surface
+northward_wind,Northward Wind at 500 hPa,va500,m s-1,pr500,time: point,NA,-1000.0,1000.0,Meridional wind on the 500 hPa surface
+northward_wind,Northward Wind at 1000 hPa,va1000,m s-1,pr1000,time: point,NA,-1000.0,1000.0,Meridional wind on the 1000 hPa surface
+upward_air_velocity,Upward Wind at 50 hPa,wa50,m s-1,pr50,time: point,NA,-1000.0,1000.0,Upward wind on the 50 hPa surface
+air_temperature,Air Temperature at 5 hPa,ta5,K,pr5,time: point,NA,0.0,1000.0,Temperature on the 5 hPa surface
+air_temperature,Air Temperature at 10 hPa,ta10,K,pr10,time: point,NA,0.0,1000.0,Temperature on the 10 hPa surface
+air_temperature,Air Temperature at 30 hPa,ta30,K,pr30,time: point,NA,0.0,1000.0,Temperature on the 30 hPa surface
+air_temperature,Air Temperature at 40 hPa,ta40,K,pr40,time: point,NA,0.0,1000.0,Temperature on the 40 hPa surface
+air_temperature,Air Temperature at 50 hPa,ta50,K,pr50,time: point,NA,0.0,1000.0,Temperature on the 50 hPa surface
+air_temperature,Air Temperature at 70 hPa,ta70,K,pr70,time: point,NA,0.0,1000.0,Temperature on the 70 hPa surface
+air_temperature,Air Temperature at 100 hPa,ta100,K,pr100,time: point,NA,0.0,1000.0,Temperature on the 100 hPa surface
+air_temperature,Air Temperature at 1000 hPa,ta1000,K,pr1000,time: point,NA,0.0,1000.0,Temperature on the 1000 hPa surface
+air_temperature,Near-Surface Air Temperature,tas,K,height2m,time: point,NA,0.0,1000.0,"near-surface (usually, 2 meter) air temperature"
+surface_temperature,Surface Temperature,sfta,K,NA,time: point,NA,0.0,1000.0,Temperature at surface
+geopotential_height,Geopotential Height at 10 hPa,zg10,m,pr10,time: point,NA,10000.0,50000.0,Geopotential height on the 10 hPa surface
+geopotential_height,Geopotential Height at 100 hPa,zg100,m,pr100,time: point,NA,0.0,40000.0,Geopotential height on the 100 hPa surface
+geopotential_height,Geopotential Height at 500 hPa,zg500,m,pr500,time: point,NA,0.0,20000.0,geopotential height on the 500 hPa surface
+geopotential_height,Geopotential Height at 1000 hPa,zg1000,m,pr1000,time: point,NA,-1000.0,10000.0,Geopotential height on the 1000 hPa surface
+ertel_potential_vorticity,Potential Vorticity on 840K,vorpot840,K m2 kg-1 s-1,pot840,time: point,NA,-1000.0,1000.0,potential vorticity at 840 K
+ertel_potential_vorticity,Potential Vorticity on 480K,vorpot480,K m2 kg-1 s-1,pot480,time: point,NA,-1000.0,1000.0,potential vorticity at 480 K
+equivalent_thickness_at_stp_of_atmosphere_ozone_content,Total Column Ozone,dytoz,DU,NA,time: point,NA,0.0,5000.0,total ozone column in DU
+surface_downwelling_shortwave_flux_in_air,Surface Downwelling Shortwave Radiation,dyrsds,W m-2,NA,time: point,down,-0.1,10000.0,surface solar irradiance for UV calculations
+surface_downwelling_shortwave_flux_in_air_assuming_clear_sky,Surface Downwelling Clear-Sky Shortwave Radiation,dyrsdscs,W m-2,NA,time: point,down,-0.1,10000.0,surface solar irradiance clear sky for UV calculations
+toa_outgoing_longwave_flux,TOA Outgoing Longwave Radiation,dyrlut,W m-2,NA,time: point,up,-0.1,10000.0,outgoing longwave irradiance
+surface_snow_thickness,Snow Depth,snd,m,NA,time: point,NA,0.0,1000.0,snow depth
+surface_snow_amount,Surface Snow Amount,snw,kg m-2,NA,time: point,NA,0.0,10000.0,Compute as the mass of surface snow on the land portion of the grid cell divided by the land area in the grid cell; report 0.0 where the land fraction is 0; exclude snow on vegetation canopy or on sea ice.
+air_temperature,Daily Minimum Near-Surface Air Temperature,tasmin,K,height2m,time: minimum,NA,0.0,1000.0,"minimum near-surface (usually, 2 meter) air temperature (add cell_method attribute time: min)"
+air_temperature,Daily Maximum Near-Surface Air Temperature,tasmax,K,height2m,time: maximum,NA,0.0,1000.0,"maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute time: max)"
+CF25_FAIL tropopause_pressure,Tropopause Pressure,tpp,Pa,NA,time: point,NA,100.0,1000000.0,Only required for the first day 00:00 UTC of each month. The tropopause follows the WMO definition and should be consistent with the the tropopause definition used for tpo3chm and lso3chm.
+CF25_FAIL mass_fraction_of_co-25_tracer_in_air,co_25 Mass Mixing Ratio in Surface Layer,sfvmrco25,kg kg-1,NA,time: point,NA,0.0,1.0,"daily mean or instantaneous? emitted as anthropogenic CO (emission file available from HTAP, ftp://ftp.retro.enes.org/pub/emissions/aggregated/anthro/0.5x0.5/2000/RETRO_ANTHRO_V2_2000_CO_aggregated.nc but only use annual mean), uniform fixed 25-day exponential decay."
+CF25_FAIL mass_fraction_of_so2t_tracer_in_air,so2t Mass Mixing Ratio in Surface Layer,sfmmrso2t,kg kg-1,NA,time: point,NA,0.0,1.0,"daily mean or instantaneous? emitted as anthropogenic year 2000 SO2 (as specified in REF-C1, wet removal as SO2."
+mass_fraction_of_nitrate_dry_aerosol_in_air,Aerosol Nitrate Mass Mixing Ratio in the Lowest Model Layer,sfmmraerno3,kg kg-1,NA,time: point,NA,0.0,1.0,NO3 aerosol
+mass_fraction_of_sulfate_dry_aerosol_in_air,Aerosol Sulfate Mass Mixing Ratio in the Lowest Model Layer,sfmmraerso4,kg kg-1,NA,time: point,NA,0.0,1.0,SO4
+mass_fraction_of_ammonium_dry_aerosol_in_air,Aerosol Ammonium Mass Mixing Ratio in the Lowest Model Layer,sfmmraernh4,kg kg-1,NA,time: point,NA,0.0,1.0,Aerosol NH4
+mass_fraction_of_black_carbon_dry_aerosol_in_air,BC Mass Mixing Ratio in the Lowest Model Layer,sfmmrbc,kg kg-1,NA,time: point,NA,0.0,1.0,BC
+mass_fraction_of_particulate_organic_matter_dry_aerosol_in_air,POM Mass Mixing Ratio in the Lowest Model Layer,sfmmrpom,kg kg-1,NA,time: point,NA,0.0,1.0,POM
+mass_fraction_of_secondary_particulate_organic_matter_dry_aerosol_in_air,SOA Mass Mixing Ratio in the Lowest Model Layer,sfmmrsoa,kg kg-1,NA,time: point,NA,0.0,1.0,SOA
+mass_fraction_of_seasalt_dry_aerosol_in_air,Sea Salt Mass Mixing Ratio in Lowest Model Layer,sfmmrss,kg kg-1,NA,time: point,NA,0.0,1.0,seasalt  
+mass_fraction_of_dust_dry_aerosol_in_air,Dust Aerosol Mass Mixing Ratio in Lowest Model Layer,sfmmrdust,kg kg-1,NA,time: point,NA,0.0,1.0,dust  
+mass_fraction_of_water_in_ambient_aerosol_in_air,Aerosol Water Mass Mixing Ratio in Lowest Model Layer,sfmmraerh2o,kg kg-1,NA,time: point,NA,0.0,1.0,aerosol water 
+mole_fraction_of_ozone_in_air,Ozone Volume Mixing Ratio in Lowest Model Layer,sfvmro3,mole mole-1,NA,time: point,NA,0.0,1.0,
+precipitation_flux,Precipitation,pr,kg m-2 s-1,NA,time: point,NA,0.0,1000.0,at surface; includes both liquid and solid phases from all types of clouds (both large-scale and convective)
+atmosphere_boundary_layer_thickness,Daily Maximum PBL Height,maxpblz,m,NA,time: maximum,NA,0.0,20000.0,
+atmosphere_boundary_layer_thickness,Daily Minimum PBL Height,minpblz,m,NA,time: minimum,NA,0.0,20000.0,
+atmosphere_optical_thickness_due_to_cloud,Cloud Optical Depth,cod,1,NA,time: point,NA,0.0,100000.0,This is the in-cloud optical depth obtained by considering only the cloudy portion of the grid cell.
+cloud_area_fraction,Total Cloud Fraction,clt,%,NA,time: point,NA,0.0,101.0,"For the whole atmospheric column, as seen from the surface or the top of the atmosphere.  Include both large-scale and convective cloud."
+CF25_FAIL mole_fraction_of_specified_co-50ea_tracer_in_air,co_50_ea Volume Mixing Ratio at 700 hPa,vmrco50ea700,mole mole-1,pr700,time: point,NA,0.0,1.0,"daily mean, emitted as anthropogenic CO over East Asia (15N-50N; 95E-160E),  (emission file available from HTAP), uniform fixed 50-day exponential decay."
+CF25_FAIL mole_fraction_of_specified_co-50na_tracer_in_air,co_50_na Volume Mixing Ratio at 700 hPa,vmrco50na700,mole mole-1,pr700,time: point,NA,0.0,1.0,"daily mean, emitted as anthropogenic CO over North America (15N-55N; 60W-125W) (emission file available from HTAP), uniform fixed 50-day exponential decay."
+CF25_FAIL mole_fraction_of_specified_co-50eu_tracer_in_air,co_50_eu Volume Mixing Ratio at 700 hPa,vmrco50eu700,mole mole-1,pr700,time: point,NA,0.0,1.0,"daily mean, emitted as anthropogenic CO over Europe (25N-65N; 10W-50E) (emission file available from HTAP), uniform fixed 50-day exponential decay."
+CF25_FAIL mole_fraction_of_specified_co-50sa_tracer_in_air,co_50_sa Volume Mixing Ratio at 700 hPa,vmrco50sa700,mole mole-1,pr700,time: point,NA,0.0,1.0,"daily mean, emitted as anthropogenic CO over South Asia (5N-35N; 50E-95E) (emission file available from HTAP), uniform fixed 50-day exponential decay."
+sea_ice_area_fraction,Sea Ice Area Fraction,sic,%,NA,time: point,NA,0.0,101.0,fraction of grid cell covered by sea ice.

@@ -1,0 +1,69 @@
+Annual-mean 0-d atmosphere or land surface data on a certain pressure level (time:year),,,,,,,,,
+,,,,,,,,,
+CF standard name,Long_name,Output variable name,Units,Scalar dims,Cell Method,Positive Flux Dir.,Min Value,Max Value,Notes
+atmosphere_moles_of_nitrous_oxide,Atmospheric Burden of Nitrous Oxide,n2obrdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_nitrous_oxide,Tendency of Atmospheric Burden of Nitrous Oxide,n2otbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+atmosphere_moles_of_cfc11,Atmospheric Burden of CFC-11,cfcl3brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_cfc11,Tendency of Atmospheric Burden of CFC-11,cfcl3tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+atmosphere_moles_of_cfc12,Atmospheric Burden of CFC-12,cf2cl2brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_cfc12,Tendency of Atmospheric Burden of CFC-12,cf2cl2tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+atmosphere_moles_of_cfc113,Atmospheric Burden of CFC-113,ccl2fcclf2brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_cfc113,Tendency of Atmospheric Burden of CFC-113,ccl2fcclf2tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+atmosphere_moles_of_cfc114,Atmospheric Burden of CFC-114,cclf2cclf2brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_cfc114,Tendency of Atmospheric Burden of CFC-114,cclf2cclf2tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+atmosphere_moles_of_cfc115,Atmospheric Burden of CFC-115,cclf2cf3brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_cfc115,Tendency of Atmospheric Burden of CFC-115,cclf2cf3tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+atmosphere_moles_of_carbon_tetrachloride,Atmospheric Burden of CCl4,ccl4brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_carbon_tetrachloride,Tendency of Atmospheric Burden of CCl4,ccl4tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+atmosphere_moles_of_halon1301,Atmospheric Burden of Halon 1301,cbrf3brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_halon1301,Tendency of Atmospheric Burden of Halon 1301,cbrf3tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+atmosphere_moles_of_halon1211,Atmospheric Burden of Halon 1211,cbrclf2brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_halon1211,Tendency of Atmospheric Burden of Halon 1211,cbrclf2tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+atmosphere_moles_of_halon2402,Atmospheric Burden of Halon 2402,c2br2f4brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_halon2402,Tendency of Atmospheric Burden of Halon 2402,c2br2f4tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+atmosphere_moles_of_halon1202,Atmospheric Burden of Halon 1202,cbr2f2brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_halon1202,Tendency of Atmospheric Burden of Halon 1202,cbr2f2tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+atmosphere_moles_of_methane,Atmospheric Burden of CH4,ch4brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_methane,Tendency of Atmospheric Burden of CH4,ch4tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+tendency_of_troposphere_moles_of_methane,Tendency of Tropospheric Burden of CH4,ch4trtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged tropospheric loss
+tendency_of_middle_atmosphere_moles_of_methane,Tendency of Middle Atmosphere Burden of CH4,ch4smtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged stratospheric and mesospheric loss
+atmosphere_moles_of_carbon_monoxide,Atmospheric Burden of CO,cobrdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_carbon_monoxide,Tendency of Atmospheric Burden of CO,cotbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+tendency_of_troposphere_moles_of_carbon_monoxide,Tendency of Tropospheric Burden of CO,cotrtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged tropospheric loss
+tendency_of_middle_atmosphere_moles_of_carbon_monoxide,Tendency of Middle Atmosphere Burden of CO,cosmtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged stratospheric and mesospheric loss
+atmosphere_moles_of_molecular_hydrogen,Atmospheric Burden of H2,h2brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_molecular_hydrogen,Tendency of Atmospheric Burden of H2,h2tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+tendency_of_troposphere_moles_of_molecular_hydrogen,Tendency of Tropospheric Burden of H2,h2trtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged tropospheric loss
+tendency_of_middle_atmosphere_moles_of_molecular_hydrogen,Tendency of Middle Atmosphere Burden of H2,h2smtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged stratospheric and mesospheric loss
+atmosphere_moles_of_methyl_chloride,Atmospheric Burden of CH3Cl,ch3clbrdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_methyl_chloride,Tendency of Atmospheric Burden of CH3Cl,ch3cltbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+tendency_of_troposphere_moles_of_methyl_chloride,Tendency of Tropospheric Burden of CH3Cl,ch3cltrtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged tropospheric loss
+tendency_of_middle_atmosphere_moles_of_methyl_chloride,Tendency of Middle Atmosphere Burden of CH3Cl,ch3clsmtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged stratospheric and mesospheric loss
+atmosphere_moles_of_methyl_bromide,Atmospheric Burden of CH3Br,ch3brbrdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_methyl_bromide,Tendency of Atmospheric Burden of CH3Br,ch3brtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+tendency_of_troposphere_moles_of_methyl_bromide,Tendency of Tropospheric Burden of CH3Br,ch3brtrtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged tropospheric loss
+tendency_of_middle_atmosphere_moles_of_methyl_bromide,Tendency of Middle Atmosphere Burden of CH3Br,ch3brsmtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged stratospheric and mesospheric loss
+atmosphere_moles_of_hcc140a,Atmospheric Burden of CH3CCl3,ch3ccl3brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_hcc140a,Tendency of Atmospheric Burden of CH3CCl3,ch3ccl3tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+tendency_of_troposphere_moles_of_hcc140a,Tendency of Tropospheric Burden of CH3CCl3,ch3ccl3trtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged tropospheric loss
+tendency_of_middle_atmosphere_moles_of_hcc140a,Tendency of Middle Atmosphere Burden of CH3CCl3,ch3ccl3smtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged stratospheric and mesospheric loss
+atmosphere_moles_of_hcfc22,Atmospheric Burden of CHClF2,chclf2brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_hcfc22,Tendency of Atmospheric Burden of CHClF2,chclf2tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+tendency_of_troposphere_moles_of_hcfc22,Tendency of Tropospheric Burden of CHClF2,chclf2trtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged tropospheric loss
+CF25_FAIL tendency_of_middle_atmosphere_moles_of_hcfc22,Tendency of Middle Atmosphere Burden of CHClF2,chclf2smtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged stratospheric and mesospheric loss
+atmosphere_moles_of_hcfc141b,Atmospheric Burden of CH3CCl2F,ch3ccl2fbrdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_hcfc141b,Tendency of Atmospheric Burden of CH3CCl2F,ch3ccl2ftbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+CF25_FAIL tendency_of_troposphere_moles_of_hcfc141b,Tendency of Tropospheric Burden of CH3CCl2F,ch3ccl2ftrtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged tropospheric loss
+CF25_FAIL tendency_of_middle_atmosphere_moles_of_hcfc141b,Tendency of Middle Atmosphere Burden of CH3CCl2F,ch3ccl2fsmtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged stratospheric and mesospheric loss
+atmosphere_moles_of_hcfc142b,Atmospheric Burden of CH3CClF2,ch3cclf2brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+tendency_of_atmosphere_moles_of_hcfc142b,Tendency of Atmospheric Burden of CH3CClF2,ch3cclf2tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+CF25_FAIL tendency_of_troposphere_moles_of_hcfc142b,Tendency of Tropospheric Burden of CH3CClF2,ch3cclf2trtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged tropospheric loss
+CF25_FAIL tendency_of_middle_atmosphere_moles_of_hcfc142b,Tendency of Middle Atmosphere Burden of CH3CClF2,ch3cclf2smtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged stratospheric and mesospheric loss
+CF25_FAIL atmosphere_moles_of_hfc134a,Atmospheric Burden of CH2FCF3,ch2fcf3brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+CF25_FAIL tendency_of_atmosphere_moles_of_hfc134a,Tendency of Atmospheric Burden of CH2FCF3,ch2fcf3tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+CF25_FAIL tendency_of_troposphere_moles_of_hfc134a,Tendency of Tropospheric Burden of CH2FCF3,ch2fcf3trtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged tropospheric loss
+CF25_FAIL tendency_of_middle_atmosphere_moles_of_hfc134a,Tendency of Middle Atmosphere Burden of CH2FCF3,ch2fcf3smtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged stratospheric and mesospheric loss
+CF25_FAIL atmosphere_moles_of_hcfc123,Atmospheric Burden of C2HF3Cl2,c2hf3cl2brdn,moles,NA,time: mean,NA,0.0,1.00E+16,total yearly average burden
+CF25_FAIL tendency_of_atmosphere_moles_of_hcfc123,Tendency of Atmospheric Burden of C2HF3Cl2,c2hf3cl2tbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged atmospheric loss
+CF25_FAIL tendency_of_troposphere_moles_of_hcfc123,Tendency of Tropospheric Burden of C2HF3Cl2,c2hf3cl2trtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged tropospheric loss
+CF25_FAIL tendency_of_middle_atmosphere_moles_of_hcfc123,Tendency of Middle Atmosphere Burden of C2HF3Cl2,c2hf3cl2smtbrdn,moles yr-1,NA,time: mean,NA,0.0,1.00E+16,total yearly averaged stratospheric and mesospheric loss

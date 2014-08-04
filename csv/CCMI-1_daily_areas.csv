@@ -1,0 +1,9 @@
+Daily areas,,,,,,,,,
+,,,,,,,,,
+CF standard name,Long_name,Output variable name,Units,Scalar dims,Cell Method,Positive Flux Dir.,Min Value,Max Value,Notes
+CF25_FAIL arctic_area_integral_of_polar_stratospheric_cloud_area_fraction,Area of PSC at 50 hPa over the Arctic,nh50psca,m2,pr50,area,NA,0.0,5.0E+14,Daily PSC Area that is calculated by the model's PSC scheme poleward of 60 degrees at 50 hPa for Nov-April in NH
+CF25_FAIL antarctic_area_integral_of_polar_stratospheric_cloud_area_fraction,Area of PSCs at 50 hPa over the Antarctic,sh50psca,m2,pr50,area,NA,0.0,5.0E+14,Daily PSC Area that is calculated by the model's PSC scheme poleward of 60 degrees at 50 hPa for July-Dec in SH
+CF25_FAIL arctic_area_where_air_temperature_less_than_188k,Area over the Arctic at 50 hPa with Air Temperature Less than 188K,nh50area188k,m2,pr50,area,NA,0.0,5.0E+14,Daily Area where the Temperature poleward of 60 degrees is below 188 K at 50 hPa for Nov-April in NH
+CF25_FAIL arctic_area_where_air_temperature_less_than_195k,Area over the Arctic at 50 hPa with Air Temperature Less than 195K,nh50area195k,m2,pr50,area,NA,0.0,5.0E+14,Daily Area where the Temperature poleward of 60 degrees is below 195 K at 50 hPa for Nov-April in NH
+CF25_FAIL antarctic_area_where_air_temperature_less_than_188k,Area over the Antarctic at 50 hPa with Air Temperature Less and 188K,sh50area188k,m2,pr50,area,NA,0.0,5.0E+14,Daily Area where the Temperature poleward of 60 degrees is below 188 K at 50 hPa for July-Dec in SH
+CF25_FAIL antarctic_area_where_air_temperature_less_than_195k,Area over the Antarctic at 50 hPa with Air Temperature Less and 195K,sh50area195k,m2,pr50,area,NA,0.0,5.0E+14,Daily Area where the Temperature poleward of 60 degrees is below 195 K at 50 hPa for July-Dec in SH

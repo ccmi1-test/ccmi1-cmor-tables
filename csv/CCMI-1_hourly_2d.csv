@@ -1,0 +1,12 @@
+"Hourly 2d (longitude, latitude, time:hour)",,,,,,,,,
+,,,,,,,,,
+CF standard name,Long_name,Output variable name,Units,Scalar dims,Cell Method,Positive Flux Dir.,Min Value,Max Value,Notes
+surface_air_pressure,Surface Air Pressure,ps,Pa,NA,time: mean,NA,0,1000000,"surface pressure (not mean sea-level pressure), 2-D field to calculate the 3-D pressure field from hybrid coordinates"
+mole_fraction_of_ozone_in_air,Ozone Volume Mixing Ratio in the Lowest Model Layer,sfvmro3,mole mole-1,NA,time: mean,NA,0,1,
+mole_fraction_of_nitrogen_dioxide_in_air,NO2 Volume Mixing Ratio in the Lowest Model Layer,sfvmrno2,mole mole-1,NA,time: mean,NA,0,1,
+mole_fraction_of_carbon_monoxide_in_air,CO Volume Mixing Ratio in the Lowest Model Layer,sfvmrco,mole mole-1,NA,time: mean,NA,0,1,
+mass_fraction_of_pm2p5_ambient_aerosol_in_air,PM2.5 Mass Mixing Ratio in the Lowest Model Layer,sfmmrpm2p5,kg kg-1,NA,time: mean,NA,0,1,
+tendency_of_atmosphere_mass_content_of_ozone_due_to_dry_deposition,Dry Deposition Rate of O3,dryo3,kg m-2 s-1,NA,time: mean,down,0,1000000,"Only for year 2006. dry deposition includes gravitational settling, impact scavenging, and turbulent deposition."
+CF25_FAIL stomatal_conductance_of_water_vapour_per_unit_leaf_area,Stomatal Conductance of Water Vapour,gsto,mmol m-2 s-1,NA,time: mean,NA,0,1000000,Only for year 2006.  Full units are mmol H2O/m^2 leaf area/sec. 
+tendency_of_atmosphere_mass_content_of_ozone_due_to_dry_deposition_into_stomata,Dry Deposition Rate of O3 in Stomata,stoo3,kg m-2 s-1,NA,time: mean,down,0,1000000,Only for year 2006
+mole_fraction_of_ozone_in_air,Ozone Volume Mixing Ratio at Canopy Height,vmro3cnp,mole mole-1,NA,time: mean,NA,0,1,Only for year 2006
