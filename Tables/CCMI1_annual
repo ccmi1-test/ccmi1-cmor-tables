@@ -1,8 +1,8 @@
 cmor_version: 2.5.0    ! minimum version of CMOR that can read this table
-cf_version:   1.6      ! version of CF that output conforms to
+cf_version:   1.4      ! version of CF that output conforms to
 project_id:   CCMI1    ! project id
 table_id:     annual   ! table id
-table_date:   27 March 2014 ! date this table was constructed
+table_date:   6 August 2014 ! date this table was constructed
 modeling_realm: atmos
 frequency: yr
 
@@ -600,8 +600,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_nitrous_oxide
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of Nitrous Oxide
 comment:           total yearly average burden
 !----------------------------------
@@ -623,8 +622,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_nitrous_oxide
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of Nitrous Oxide
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -646,8 +644,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_cfc11
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CFC-11
 comment:           total yearly average burden
 !----------------------------------
@@ -669,8 +666,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_cfc11
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CFC-11
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -692,8 +688,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_cfc12
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CFC-12
 comment:           total yearly average burden
 !----------------------------------
@@ -715,8 +710,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_cfc12
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CFC-12
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -738,8 +732,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_cfc113
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CFC-113
 comment:           total yearly average burden
 !----------------------------------
@@ -761,8 +754,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_cfc113
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CFC-113
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -784,8 +776,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_cfc114
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CFC-114
 comment:           total yearly average burden
 !----------------------------------
@@ -807,8 +798,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_cfc114
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CFC-114
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -830,8 +820,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_cfc115
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CFC-115
 comment:           total yearly average burden
 !----------------------------------
@@ -853,8 +842,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_cfc115
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CFC-115
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -876,8 +864,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_carbon_tetrachloride
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CCl4
 comment:           total yearly average burden
 !----------------------------------
@@ -899,8 +886,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_carbon_tetrachloride
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CCl4
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -922,8 +908,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_halon1301
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of Halon 1301
 comment:           total yearly average burden
 !----------------------------------
@@ -945,8 +930,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_halon1301
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of Halon 1301
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -968,8 +952,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_halon1211
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of Halon 1211
 comment:           total yearly average burden
 !----------------------------------
@@ -991,8 +974,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_halon1211
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of Halon 1211
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -1014,8 +996,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_halon2402
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of Halon 2402
 comment:           total yearly average burden
 !----------------------------------
@@ -1037,8 +1018,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_halon2402
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of Halon 2402
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -1060,8 +1040,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_halon1202
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of Halon 1202
 comment:           total yearly average burden
 !----------------------------------
@@ -1083,8 +1062,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_halon1202
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of Halon 1202
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -1106,8 +1084,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_methane
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CH4
 comment:           total yearly average burden
 !----------------------------------
@@ -1129,8 +1106,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_methane
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CH4
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -1152,8 +1128,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_troposphere_moles_of_methane
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Tropospheric Burden of CH4
 comment:           total yearly averaged tropospheric loss
 !----------------------------------
@@ -1175,8 +1150,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_middle_atmosphere_moles_of_methane
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Middle Atmosphere Burden of CH4
 comment:           total yearly averaged stratospheric and mesospheric loss
 !----------------------------------
@@ -1198,8 +1172,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_carbon_monoxide
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CO
 comment:           total yearly average burden
 !----------------------------------
@@ -1221,8 +1194,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_carbon_monoxide
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CO
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -1244,8 +1216,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_troposphere_moles_of_carbon_monoxide
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Tropospheric Burden of CO
 comment:           total yearly averaged tropospheric loss
 !----------------------------------
@@ -1267,8 +1238,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_middle_atmosphere_moles_of_carbon_monoxide
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Middle Atmosphere Burden of CO
 comment:           total yearly averaged stratospheric and mesospheric loss
 !----------------------------------
@@ -1290,8 +1260,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_molecular_hydrogen
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of H2
 comment:           total yearly average burden
 !----------------------------------
@@ -1313,8 +1282,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_molecular_hydrogen
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of H2
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -1336,8 +1304,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_troposphere_moles_of_molecular_hydrogen
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Tropospheric Burden of H2
 comment:           total yearly averaged tropospheric loss
 !----------------------------------
@@ -1359,8 +1326,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_middle_atmosphere_moles_of_molecular_hydrogen
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Middle Atmosphere Burden of H2
 comment:           total yearly averaged stratospheric and mesospheric loss
 !----------------------------------
@@ -1382,8 +1348,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_methyl_chloride
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CH3Cl
 comment:           total yearly average burden
 !----------------------------------
@@ -1405,8 +1370,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_methyl_chloride
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CH3Cl
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -1428,8 +1392,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_troposphere_moles_of_methyl_chloride
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Tropospheric Burden of CH3Cl
 comment:           total yearly averaged tropospheric loss
 !----------------------------------
@@ -1451,8 +1414,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_middle_atmosphere_moles_of_methyl_chloride
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Middle Atmosphere Burden of CH3Cl
 comment:           total yearly averaged stratospheric and mesospheric loss
 !----------------------------------
@@ -1474,8 +1436,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_methyl_bromide
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CH3Br
 comment:           total yearly average burden
 !----------------------------------
@@ -1497,8 +1458,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_methyl_bromide
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CH3Br
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -1520,8 +1480,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_troposphere_moles_of_methyl_bromide
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Tropospheric Burden of CH3Br
 comment:           total yearly averaged tropospheric loss
 !----------------------------------
@@ -1543,8 +1502,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_middle_atmosphere_moles_of_methyl_bromide
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Middle Atmosphere Burden of CH3Br
 comment:           total yearly averaged stratospheric and mesospheric loss
 !----------------------------------
@@ -1566,8 +1524,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_hcc140a
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CH3CCl3
 comment:           total yearly average burden
 !----------------------------------
@@ -1589,8 +1546,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_hcc140a
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CH3CCl3
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -1612,8 +1568,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_troposphere_moles_of_hcc140a
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Tropospheric Burden of CH3CCl3
 comment:           total yearly averaged tropospheric loss
 !----------------------------------
@@ -1635,8 +1590,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_middle_atmosphere_moles_of_hcc140a
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Middle Atmosphere Burden of CH3CCl3
 comment:           total yearly averaged stratospheric and mesospheric loss
 !----------------------------------
@@ -1658,8 +1612,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_hcfc22
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CHClF2
 comment:           total yearly average burden
 !----------------------------------
@@ -1681,8 +1634,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_hcfc22
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CHClF2
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -1704,8 +1656,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_troposphere_moles_of_hcfc22
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Tropospheric Burden of CHClF2
 comment:           total yearly averaged tropospheric loss
 !----------------------------------
@@ -1727,8 +1678,7 @@ modeling_realm:    atmos
 !----------------------------------
 !FAILS CF25 standard_name:     tendency_of_middle_atmosphere_moles_of_hcfc22
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Middle Atmosphere Burden of CHClF2
 comment:           total yearly averaged stratospheric and mesospheric loss
 !----------------------------------
@@ -1750,8 +1700,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_hcfc141b
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CH3CCl2F
 comment:           total yearly average burden
 !----------------------------------
@@ -1773,8 +1722,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_hcfc141b
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CH3CCl2F
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -1796,8 +1744,7 @@ modeling_realm:    atmos
 !----------------------------------
 !FAILS CF25 standard_name:     tendency_of_troposphere_moles_of_hcfc141b
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Tropospheric Burden of CH3CCl2F
 comment:           total yearly averaged tropospheric loss
 !----------------------------------
@@ -1819,8 +1766,7 @@ modeling_realm:    atmos
 !----------------------------------
 !FAILS CF25 standard_name:     tendency_of_middle_atmosphere_moles_of_hcfc141b
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Middle Atmosphere Burden of CH3CCl2F
 comment:           total yearly averaged stratospheric and mesospheric loss
 !----------------------------------
@@ -1842,8 +1788,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     atmosphere_moles_of_hcfc142b
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CH3CClF2
 comment:           total yearly average burden
 !----------------------------------
@@ -1865,8 +1810,7 @@ modeling_realm:    atmos
 !----------------------------------
 standard_name:     tendency_of_atmosphere_moles_of_hcfc142b
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CH3CClF2
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -1888,8 +1832,7 @@ modeling_realm:    atmos
 !----------------------------------
 !FAILS CF25 standard_name:     tendency_of_troposphere_moles_of_hcfc142b
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Tropospheric Burden of CH3CClF2
 comment:           total yearly averaged tropospheric loss
 !----------------------------------
@@ -1911,8 +1854,7 @@ modeling_realm:    atmos
 !----------------------------------
 !FAILS CF25 standard_name:     tendency_of_middle_atmosphere_moles_of_hcfc142b
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Middle Atmosphere Burden of CH3CClF2
 comment:           total yearly averaged stratospheric and mesospheric loss
 !----------------------------------
@@ -1934,8 +1876,7 @@ modeling_realm:    atmos
 !----------------------------------
 !FAILS CF25 standard_name:     atmosphere_moles_of_hfc134a
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of CH2FCF3
 comment:           total yearly average burden
 !----------------------------------
@@ -1957,8 +1898,7 @@ modeling_realm:    atmos
 !----------------------------------
 !FAILS CF25 standard_name:     tendency_of_atmosphere_moles_of_hfc134a
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of CH2FCF3
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -1980,8 +1920,7 @@ modeling_realm:    atmos
 !----------------------------------
 !FAILS CF25 standard_name:     tendency_of_troposphere_moles_of_hfc134a
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Tropospheric Burden of CH2FCF3
 comment:           total yearly averaged tropospheric loss
 !----------------------------------
@@ -2003,8 +1942,7 @@ modeling_realm:    atmos
 !----------------------------------
 !FAILS CF25 standard_name:     tendency_of_middle_atmosphere_moles_of_hfc134a
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Middle Atmosphere Burden of CH2FCF3
 comment:           total yearly averaged stratospheric and mesospheric loss
 !----------------------------------
@@ -2026,8 +1964,7 @@ modeling_realm:    atmos
 !----------------------------------
 !FAILS CF25 standard_name:     atmosphere_moles_of_hcfc123
 units:             moles
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Atmospheric Burden of C2HF3Cl2
 comment:           total yearly average burden
 !----------------------------------
@@ -2049,8 +1986,7 @@ modeling_realm:    atmos
 !----------------------------------
 !FAILS CF25 standard_name:     tendency_of_atmosphere_moles_of_hcfc123
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Atmospheric Burden of C2HF3Cl2
 comment:           total yearly averaged atmospheric loss
 !----------------------------------
@@ -2072,8 +2008,7 @@ modeling_realm:    atmos
 !----------------------------------
 !FAILS CF25 standard_name:     tendency_of_troposphere_moles_of_hcfc123
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Tropospheric Burden of C2HF3Cl2
 comment:           total yearly averaged tropospheric loss
 !----------------------------------
@@ -2095,8 +2030,7 @@ modeling_realm:    atmos
 !----------------------------------
 !FAILS CF25 standard_name:     tendency_of_middle_atmosphere_moles_of_hcfc123
 units:             moles yr-1
-cell_methods:      time: mean
-cell_measures:     area: areacella
+cell_methods:      time: mean area: sum
 long_name:         Tendency of Middle Atmosphere Burden of C2HF3Cl2
 comment:           total yearly averaged stratospheric and mesospheric loss
 !----------------------------------

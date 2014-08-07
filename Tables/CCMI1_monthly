@@ -1,8 +1,8 @@
 cmor_version: 2.5.0    ! minimum version of CMOR that can read this table
-cf_version:   1.6      ! version of CF that output conforms to
+cf_version:   1.4      ! version of CF that output conforms to
 project_id:   CCMI1    ! project id
 table_id:     monthly  ! table id
-table_date:   27 March 2014 ! date this table was constructed
+table_date:   6 August 2014 ! date this table was constructed
 modeling_realm: atmos
 frequency: mon
 
@@ -3994,7 +3994,7 @@ comment:           Lump your vegetation scheme into 9 categories: 1) tropf 2) de
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
-dimensions:        longitude latitude time vgidx
+dimensions:        longitude latitude vgidx time 
 type:              real
 valid_min:         0.0
 valid_max:         101.0
@@ -6429,7 +6429,7 @@ units:             mole mole-1
 cell_methods:      time: mean
 cell_measures:     area: areacella
 long_name:         O3ste Volume Mixing Ratio
-comment:           Ozone tracer intended to map out strat-trop exchange (STE) of ozone:  (a) set o3ste to O3 at top layer; (b) use standard O3 P-L terms to change o3ste every chemistry time step for 'stratospheric' air grid boxes; (c) reset o3ste to O3 in the lowermost layers (fix these layers to be up to sigma=0.9, ~1 km altitude) and record this tropospheric reset only as a 2-D (lat,long) monthly mean tendency (Tg/s or Tg per month pergird cell).  Determine 'statropsheric' air in any way that is most convenient (e90, O3, PV-theta, etc).
+comment:           Ozone tracer intended to map out STE of ozone:  (a) set o3ste to O3 at top layer; (b) use standard O3 P-L terms to change o3ste every chemistry time step for 'stratospheric' air grid boxes; (c) reset o3ste to O3 in the lowermost layers (fix these layers to be up to sigma=0.9, ~1 km altitude) and record this tropospheric reset only as a 2-D (lat,long) monthly mean tendency (Tg/s or Tg per month pergird cell).  Determine 'statropsheric' air in any way that is most convenient (e90, O3, PV-theta, etc).
 !----------------------------------
 ! Additional variable information:
 !----------------------------------
@@ -6519,7 +6519,6 @@ modeling_realm:     atmos
 standard_name:     air_temperature
 units:             K
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean Air Temperature
 comment:           
 !----------------------------------
@@ -6542,7 +6541,6 @@ modeling_realm:     atmos
 standard_name:     eastward_wind
 units:             m s-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean Eastward Wind
 comment:           
 !----------------------------------
@@ -6565,7 +6563,6 @@ modeling_realm:     atmos
 standard_name:     northward_wind
 units:             m s-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean Northward Wind
 comment:           
 !----------------------------------
@@ -6588,7 +6585,6 @@ modeling_realm:     atmos
 standard_name:     geopotential_height
 units:             m
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean Geopotential Height
 comment:           
 !----------------------------------
@@ -6611,7 +6607,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_ozone_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean Ozone Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6634,7 +6629,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_nitrous_oxide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean N2O Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6657,7 +6651,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_methane_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CH4 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6680,7 +6673,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_water_vapor_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean H2O Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6703,7 +6695,6 @@ modeling_realm:     atmos
 standard_name:     age_of_stratospheric_air
 units:             years
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean Mean Age of Stratospheric Air
 comment:           The mean age of air is defined as the mean time that a stratospheric air mass has been out of contact with the well-mixed troposphere.
 !----------------------------------
@@ -6726,7 +6717,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_methyl_chloride_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CH3Cl Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6749,7 +6739,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_hcc140a_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CH3CCl3 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6772,7 +6761,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_carbon_tetrachloride_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CCl4 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6795,7 +6783,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_cfc11_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CFCl3 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6818,7 +6805,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_cfc12_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CF2Cl2 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6841,7 +6827,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_hcfc22_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CHClF2 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6864,7 +6849,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_hcfc141b_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CH3CCl2F Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6887,7 +6871,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_hcfc142b_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CH3CClF2 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6910,7 +6893,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_halon1211_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal mean CBrClF2 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6933,7 +6915,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_halon1301_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CBrF3 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6956,7 +6937,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_halon2402_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CBrF2CBrF2 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -6979,7 +6959,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_methyl_bromide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CH3Br Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7002,7 +6981,6 @@ modeling_realm:     atmos
 !FAILS CF25 standard_name:     mole_fraction_of_methylene_bromide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CH2Br2 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7025,7 +7003,6 @@ modeling_realm:     atmos
 !FAILS CF25 standard_name:     mole_fraction_of_bromoform_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal mean CHBr3 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7048,7 +7025,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_nitric_acid_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean HNO3 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7071,7 +7047,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_hydrogen_chloride_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal mean HCl Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7094,7 +7069,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_chlorine_nitrate_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean ClONO2 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7117,7 +7091,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_total_reactive_nitrogen_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean Total Reactive Nitrogen (NOy) Volume Mixing Ratio
 comment:           Total reactive nitrogen; usually includes atomic nitrogen (N), nitric oxide (NO), NO2, nitrogen trioxide (NO3), dinitrogen radical (N2O5), nitric acid (HNO3), peroxynitric acid (HNO4), BrONO2, ClONO2.  Add comment attribute with detailed description about how the model calculates these fields e.g. NOy = N + NO + NO2 + NO3 + HNO3 + 2N2O5 + HNO4 + ClONO2 + BrONO2
 !----------------------------------
@@ -7140,7 +7113,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_inorganic_chlorine_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean Total Inorganic Chlorine (Cly) Volume Mixing Ratio
 comment:           Total inorganic stratospheric chlorine (e.g., HCl, ClO) resulting from degradation of chlorine-containing source gases (CFCs, HCFCs, VSLS), and natural inorganic chlorine sources (e.g., sea salt and other aerosols).  Add comment attribute with detailed description about how the model calculates these fields e.g. Cly = HCl + ClONO2 + HOCl + ClO + Cl + 2*Cl2O2 +2Cl2 + OClO + BrCl
 !----------------------------------
@@ -7163,7 +7135,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_total_inorganic_bromine_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean Total Inorganic Bromine (Bry) Volume Mixing Ratio
 comment:           Total inorganic bromine (e.g., HBr and inorganic bromine oxides and radicals (e.g., BrO, atomic bromine (Br), bromine nitrate (BrONO2)) resulting from degradation of bromine-containing organic source gases (halons, methyl bromide, VSLS), and natural inorganic bromine sources (e.g., volcanoes, sea salt, and other aerosols).  Add comment attribute with detailed description about how the model calculates these fields e.g. Bry = Br + BrO + HOBr + HBr + BrONO2 + BrCl.
 !----------------------------------
@@ -7186,7 +7157,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_atomic_chlorine_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean Cl Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7209,7 +7179,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_chlorine_monoxide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean ClO Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7232,7 +7201,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_dichlorine_peroxide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean ClOOCl Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7255,7 +7223,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_hypochlorous_acid_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean HOCl Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7278,7 +7245,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_chlorine_dioxide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean OClO Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7301,7 +7267,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_hydroxyl_radical_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean OH Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7324,7 +7289,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_hydroperoxyl_radical_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean HO2 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7347,7 +7311,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_hydrogen_peroxide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean H2O2 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7370,7 +7333,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_molecular_hydrogen_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean H2 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7393,7 +7355,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_atomic_nitrogen_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean N Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7416,7 +7377,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_nitrogen_monoxide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean NO Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7439,7 +7399,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_nitrogen_dioxide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean NO2 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7462,7 +7421,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_dinitrogen_pentoxide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean N2O5 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7485,7 +7443,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_peroxynitric_acid_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean HNO4 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7508,7 +7465,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_atomic_bromine_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean Br Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7531,7 +7487,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_bromine_monoxide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal mean BrO Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7554,7 +7509,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_bromine_chloride_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal mean BrCl Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7577,7 +7531,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_hydrogen_bromide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean HBr Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7600,7 +7553,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_hypobromous_acid_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean HOBr Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7623,7 +7575,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_bromine_nitrate_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean BrONO2 Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7646,7 +7597,6 @@ modeling_realm:     atmos
 standard_name:     northward_eliassen_palm_flux_in_air
 units:             kg s-2
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Northward EPF
 comment:           Transformed Eulerian Mean Diagnostics Meridional component Fy of EP-flux (Fy, Fz) derived from 6hr or higher frequency fields (use daily fields or 12 hr fields if the 6 hr are not available).  Please use the definitions given by equation 3.5.3a of Andrews, Holton and Leovy text book.
 !----------------------------------
@@ -7669,7 +7619,6 @@ modeling_realm:     atmos
 standard_name:     upward_eliassen_palm_flux_in_air
 units:             kg s-2
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Upward EPF
 comment:           Transformed Eulerian Mean Diagnostics Meridional component Fz of EP-flux (Fy, Fz) derived from 6hr or higher frequency fields (use daily fields or 12 hr fields if the 6 hr are not available).  Please use the definitions given by equation 3.5.3b of Andrews, Holton and Leovy text book.
 !----------------------------------
@@ -7692,7 +7641,6 @@ modeling_realm:     atmos
 standard_name:     tendency_of_eastward_wind_due_to_eliassen_palm_flux_divergence
 units:             m s-2
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Tendency of Eastward Wind from EPF Divergence
 comment:           Transformed Eulerian Mean Diagnostics Acceleration from the EP-flux divergence (D) derived from 6hr or higher frequency fields (use daily fields or 12 hr fields if the 6 hr are not available).  Please use the definitions given by equation 3.5.2a of Andrews, Holton and Leovy text book.
 !----------------------------------
@@ -7715,7 +7663,6 @@ modeling_realm:     atmos
 standard_name:     northward_transformed_eulerian_mean_air_velocity
 units:             m s-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Northward TEM air velocity
 comment:           Transformed Eulerian Mean Diagnostics v*, meridional component of the residual meridional circulation (v*, w*) derived from 6 hr or higher frequency data fields (use instantaneous daily fields or 12 hr fields if the 6 hr data are not available).
 !----------------------------------
@@ -7738,7 +7685,6 @@ modeling_realm:     atmos
 !FAILS CF25 standard_name:     upward_transformed_eulerian_mean_air_velocity
 units:             m s-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Upward TEM air velocity
 comment:           Transformed Eulerian Mean Diagnostics w*, meridional component of the residual meridional circulation (v*, w*) derived from 6 hr or higher frequency data fields (use instantaneous daily fields or 12 hr fields if the 6 hr data are not available). Scale height: 6950 m
 !----------------------------------
@@ -7761,7 +7707,6 @@ modeling_realm:     atmos
 standard_name:     tendency_of_eastward_wind_due_to_gravity_wave_drag
 units:             m s-2
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Tendency of Eastward Wind from GWD
 comment:           Eastward acceleration from the total (orographic + non-orographic) parameterized gravity wave drag (GWD) derived either from daily means or 6hr fields (use instantaneous daily fields or 12 hr fields if the 6 hr data are not available). Use the accelerations as applied in your model.
 !----------------------------------
@@ -7784,7 +7729,6 @@ modeling_realm:     atmos
 standard_name:     tendency_of_eastward_wind_due_to_orographic_gravity_wave_drag
 units:             m s-2
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Tendency of Eastward Wind from OGWD
 comment:           Eastward acceleration from the parameterized orographic gravity wave drag (OGWD) derived either from daily means or 6hr fields (use instantaneous daily fields or 12 hr fields if the 6 hr data are not available). Use the accelerations as applied in your model.
 !----------------------------------
@@ -7807,7 +7751,6 @@ modeling_realm:     atmos
 standard_name:     upward_eastward_momentum_flux_in_air_due_to_orographic_gravity_waves
 units:             Pa
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         
 comment:           Zonal orographic gravity wave stress (momentum flux), including any flux out of the top of the model (e.g., add additional level to the output file for model top. Set flux at this level to zero if nothing escapes to outer space in your model), derived either from daily means or 6hr fields (use instantaneous daily fields or 12 hr fields if the 6 hr data are not available).
 !----------------------------------
@@ -7830,7 +7773,6 @@ modeling_realm:     atmos
 standard_name:     tendency_of_eastward_wind_due_to_nonorographic_gravity_wave_drag
 units:             m s-2
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Tendency of Eastward Wind from Non-OGWD
 comment:           Eastward acceleration from the parameterized non-orographic gravity wave drag (NOGWD) derived either from daily means or 6hr fields (use instantaneous daily fields or 12 hr fields if the 6 hr data are not available). Use the accelerations as applied in your model.
 !----------------------------------
@@ -7853,7 +7795,6 @@ modeling_realm:     atmos
 standard_name:     upward_eastward_momentum_flux_in_air_due_to_nonorographic_eastward_gravity_waves
 units:             Pa
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         
 comment:           Westward component of the zonal non-orographic gravity wave momentum flux, including any flux out of the top of the model (e.g., add additional level to the output file for model top. Set flux at this level to zero if nothing escapes to outer space in your model), derived either from daily means or 6hr fields (use instantaneous daily fields or 12 hr fields if the 6 hr data are not available).
 !----------------------------------
@@ -7876,7 +7817,6 @@ modeling_realm:     atmos
 standard_name:     upward_eastward_momentum_flux_in_air_due_to_nonorographic_westward_gravity_waves
 units:             Pa
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         
 comment:           Eastward component of the zonal non-orographic gravity wave momentum flux, including any flux out of the top of the model (e.g., add additional level to the output file for model top. Set flux at this level to zero if nothing escapes to outer space in your model), derived either from daily means or 6hr fields (use instantaneous daily fields or 12 hr fields if the 6 hr data are not available).
 !----------------------------------
@@ -7899,7 +7839,6 @@ modeling_realm:     atmos
 standard_name:     tendency_of_eastward_wind_due_to_numerical_artefacts
 units:             m s-2
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         
 comment:           Other sub-grid scale/numerical zonal drag excluding that already provided for the parameterized orographic and non-ororgraphic gravity waves. This would be used to calculate the total 'diabatic drag'. Contributions to this additional drag such Rayleigh friction and diffusion that can be calculated from the monthly mean wind fields should not be included, but details (e.g. coefficients) of the friction and/or diffusion used in the model should be provided separately.
 !----------------------------------
@@ -7922,7 +7861,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_formaldehyde_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CH2O Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7945,7 +7883,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_methyl_hydroperoxide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CH3OOH Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7968,7 +7905,6 @@ modeling_realm:     atmos
 standard_name:     mole_fraction_of_carbon_monoxide_in_air
 units:             mole mole-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean CO Volume Mixing Ratio
 comment:           
 !----------------------------------
@@ -7991,7 +7927,6 @@ modeling_realm:     atmos
 standard_name:     tendency_of_air_temperature_due_to_diabatic_processes
 units:             K s-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Zonal Mean Diabatic Heating Rates
 comment:           The diabatic heating rates due to all the processes that may change potential temperature
 !----------------------------------
@@ -8014,7 +7949,6 @@ modeling_realm:     atmos
 standard_name:     northward_heat_flux_in_air_due_to_eddy_advection
 units:             K m s-1
 cell_methods:      time: mean longitude: mean
-cell_measures:     area: areacella
 long_name:         Meridional Heat Flux
 comment:           Zonally averaged meridional heat flux at 100 hPa as monthly means derived from daily (or higher frequency) fields.
 !----------------------------------
